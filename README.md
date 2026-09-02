@@ -18,7 +18,13 @@ Building portable retro-gaming handhelds typically requires custom PCB fabricati
 * **Exclusive Device Locking (`EVIOCGRAB`):** Locks the targeted keyboard device at runtime to prevent keypress leakage into host terminal sessions or desktop environments[cite: 2, 5].
 * **Virtual Gamepad Emulation (`uinput`):** Instantiates a virtual USB HID gamepad emitting native Linux input signals (`BTN_SOUTH`, `BTN_EAST`, `BTN_NORTH`, `BTN_WEST`, `BTN_TL`, `BTN_TR`, `BTN_START`, `BTN_SELECT`) recognized out-of-the-box by emulators[cite: 2, 5].
 * **Relative Mouse Vector Engine:** Maps a dedicated directional key cluster (`I/J/K/L`) to relative cursor coordinates (`REL_X`, `REL_Y`) for full menu navigation without requiring a physical mouse[cite: 2, 5].
-* **Deterministic C99 Architecture:** Written in strict C99 without dynamic memory allocation (`malloc`/`free`)[cite: 2, 3], guaranteeing zero runtime heap fragmentation and predictable $O(1)$ execution performance[cite: 2].
+* **Deterministic C99 Architecture:** Written in strict C99 without dynamic memory allocation (`malloc`/`free`)[cite: 2, 3], guaranteeing zero runtime heap
+*fragmentation and predictable $O(1)$ execution performance[cite: 2].
+
+---
+
+---
+TURN YOUR OLD KEYBOARD IN TO HANDHELD GAMING CONSOLE
 
 ---
 
