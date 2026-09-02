@@ -1,0 +1,27 @@
++-----------------------------------------------------------------+
+|               Physical USB Keyboard (Host HID Device)           |
++-----------------------------------------------------------------+
+                                |
+                                v
++-----------------------------------------------------------------+
+|      Linux evdev Interface (/dev/input/eventX) + EVIOCGRAB      |
++-----------------------------------------------------------------+
+                                |
+                                v
++-----------------------------------------------------------------+
+|      Virtual-HID-Handheld-Core Engine (Signal Translator)       |
+|    - Maps WASD/Arrow Keys to Virtual D-Pad / Axis              |
+|    - Maps Action Keys (Z, X, C, V) to Gamepad Buttons (A, B, X, Y)|
+|    - Translates I/J/K/L into Relative Mouse Axis Movements      |
++-----------------------------------------------------------------+
+                                |
+                                v
++-----------------------------------------------------------------+
+|          Linux uinput Subsystem (/dev/uinput Kernel Module)     |
++-----------------------------------------------------------------+
+                                |
+                                v
++-----------------------------------------------------------------+
+|            Virtual Gamepad Node (/dev/input/js0)                |
+|               (Consumed by RetroArch / Emulators)               |
++-----------------------------------------------------------------+
